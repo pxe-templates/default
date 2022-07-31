@@ -1,13 +1,12 @@
 // @ts-check
 const CORS = require("@pxe/cors");
 const Server = require("@pxe/server");
-const { staticDir } = require("@pxe/utils");
-const getAllExports = require("./utils/getAllExports");
+const { staticDir, routesSync } = require("@pxe/utils");
 
 const app = new Server();
 
 app.use(new CORS());
 app.use(staticDir("public"));
-app.use(...getAllExports("routes"));
+app.use(...routesSync("routes"));
 
 app.ls(Number(process.env.PORT || 8080));
