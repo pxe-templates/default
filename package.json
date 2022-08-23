@@ -4,10 +4,10 @@
 	"main": "index.js",
 	"private": "true",
 	"dependencies": {
-		"@pxe/cors": "^1.0.1-alpha.1",
-		"@pxe/router": "^1.0.1-alpha.4",
-		"@pxe/server": "^1.0.11",
-		"@pxe/utils": "^1.0.0-alpha.6",
+		"@pxe/cors": "^1.0.1",
+		"@pxe/router": "^1.0.1",
+		"@pxe/server": "^1.0.12",
+		"@pxe/utils": "^1.0.0",
 		"nodemon": "^2.0.19"
 	},
 	"scripts": {
